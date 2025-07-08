@@ -1,0 +1,247 @@
+/* 
+  Use your custom font: Wiener Melange.
+  Make sure to place the OTF file in /fonts/Wiener_Melange_Regular.otf 
+*/
+@font-face {
+    font-family: "WienerMelange";
+    src: url("fonts/Wiener_Melange_Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Root variables */
+:root {
+    --font: "WienerMelange", sans-serif;
+    /*--bgColor: #0a0a0a; !* "sex matte" black fallback *!*/
+    --bgColor: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 0, 0, 0));
+    --bgColorSolid: #0a0a0a;
+    --accentColor: #ffffff;
+    --boxBg: rgba(255, 255, 255, 0.06);   /* Slightly transparent white */
+    --boxBorder: rgba(255, 255, 255, 0.2);
+    --blurValue: 10px; /* Apple-like blur */
+    --saturateValue: 120%; /* Adjust if you want more/less color pop */
+}
+
+/* RESET + BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--bgColor);
+    color: var(--accentColor);
+    font-family: var(--font);
+}
+
+/* VIDEO CONTAINER */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* HEADER (INTRO TITLE) */
+header {
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    z-index: 1;
+}
+
+.intro-title {
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    animation: fadeZoom 1.5s ease forwards;
+    opacity: 0;
+}
+
+/* MAIN CONTENT */
+.content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+/* SECTIONS - Apple-like blur backdrop */
+section {
+    width: clamp(300px, 80%, 1000px);
+    margin: 0 auto;
+    backdrop-filter: blur(var(--blurValue)) saturate(var(--saturateValue));
+    background-color: var(--boxBg);
+    border: 1px solid var(--boxBorder);
+    border-radius: 12px;
+    padding: 1.5rem;
+    animation: fadeIn 0.8s ease;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed var(--boxBorder);
+    padding-bottom: 0.5rem;
+}
+
+/* EVENTS */
+.single-event {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    border-left: 3px solid var(--accentColor);
+    padding-left: 0.75rem;
+    transition: transform 0.2s ease;
+    cursor: default;
+}
+.single-event:hover {
+    transform: scale(1.03);
+}
+.event-links {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--accentColor);
+    transition: background-color 0.2s ease;
+}
+.event-links:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* LINKS (SOCIAL) */
+#links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.link {
+    text-decoration: none;
+    color: var(--accentColor);
+    border: 2px solid var(--accentColor);
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.link:hover {
+    background-color: var(--accentColor);
+    color: var(--bgColorSolid);
+    transform: scale(1.03);
+}
+.link:active {
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+}
+
+/* TRACKS (YOUTUBE) */
+#tracks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.youtube-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+.youtube-container:hover {
+    transform: scale(1.01);
+}
+.youtube-container iframe {
+    width: 560px;
+    height: 315px;
+    max-width: 100%;
+}
+
+/* Description container */
+.youtube-description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+/* Links/titles inside the YouTube container */
+.youtube-link {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--accentColor);
+    transition: background-color 0.2s ease;
+    width: fit-content;
+}
+.youtube-link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+}
+.youtube-video-title {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--accentColor);
+    width: fit-content;
+    transition: background-color 0.2s ease;
+}
+.youtube-video-title:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+}
+.youtube-video-description {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #ccc;
+}
+
+/* ANIMATIONS */
+@keyframes fadeZoom {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    .youtube-container {
+        flex-direction: column;
+    }
+    .youtube-container iframe {
+        width: 100%;
+        height: auto; /* let it scale naturally */
+    }
+}
