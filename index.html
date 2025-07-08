@@ -1,24 +1,25 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
   />
   <title>INTOUCH SESSIONS</title>
 
   <!-- Favicon (optional) -->
   <link
-          rel="icon"
-          href="favicon.ico"
-          type="image/x-icon"
+    rel="icon"
+    href="favicon.png"
+    type="image/x-icon"
   />
 
   <!-- Font Awesome icons -->
   <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
   />
 
   <!-- Custom CSS -->
@@ -32,532 +33,143 @@
 <!-- VIDEO CONTAINER (abstract black & white bg) -->
 <div class="video-container">
   <video
-          id="bgVideo"
-          autoplay
-          muted
-          loop
-          playsinline
+    id="bgVideo"
+    autoplay
+    muted
+    loop
+    playsinline
   >
     <source src="bg.webm" type="video/webm" />
     <source src="bg.mp4" type="video/mp4" />
-    <!-- If both fail, we'll fallback to black in script.js -->
   </video>
 </div>
 
 <!-- HEADER / BIG INTRO TITLE -->
 <header>
-  <h1 class="intro-title">MARKO KONTAKT</h1>
+  <img src="logo.svg" alt="intouch-sessions-logo" />
 </header>
 
 <!-- MAIN CONTENT -->
 <main class="content">
-  <!-- UPCOMING EVENTS -->
-  <section class="events">
-    <h2 class="section-title">UPCOMING EVENTS</h2>
 
-    <div class="single-event">
-      TUE, 11/03/2025
-      <a
-              class="event-links"
-              href="https://intouchsound.com/"
-              target="_blank"
-      >INTOUCH SOUND X TIPSY TUESDAY</a
-      >
-      at
-      Dam Dam, Vienna, AT
+  <button class="signup-button">
+    signup / contact
+  </button>
+
+  <!-- manifesto-->
+  <section class="manifesto">
+    <h2 class="section-title">manifesto</h2>
+    <div class="manifesto-container">
+      <h3 class="manifesto-title">WE BELIEVE</h3>
+      <div class="manifesto-part">in losing yourself to sound,</div>
+      <div class="manifesto-part">in connection beyond words,</div>
+      <div class="manifesto-part">in spaces where everyone belongs.</div>
+      <div class="manifesto-part">Every Friday. At IKONO Vienna.</div>
     </div>
-
-    <div class="single-event">
-      SAT, 15/03/2025
-      <a
-              class="event-links"
-              href="https://intouchsound.com/"
-              target="_blank"
-      >SKI SEASON CLOSING</a
-      >
-      at
-      Schladming, AT
-    </div>
-
-    <div class="single-event">
-      THU, 20/03/2025
-      <a
-              class="event-links"
-              href="https://marko.contakt/"
-              target="_blank"
-      >KONTAKTSTELLE</a
-      >
-      at
-      Donautechno, Vienna, AT
-    </div>
-
-    <div class="single-event">
-      FRI, 21/03/2025
-      <a
-              class="event-links"
-              href="https://intouchsound.com/"
-              target="_blank"
-      >Club Opening</a
-      >
-      at
-      EL EY X, Vienna, AT
-    </div>
-
-
-    <div class="single-event">
-      FRI, 21/03/2025
-      <a
-              class="event-links"
-              href="https://intouchsound.com/"
-              target="_blank"
-      >PIZZA PARTY PEOPLE</a
-      >
-      at
-      Enzo, Vienna, AT
-    </div>
-
-    <div class="single-event">
-      SAT, 22/03/2025
-      <a
-              class="event-links"
-              href="https://intouchsound.com/"
-              target="_blank"
-      >Morning Kaffee House Rave</a
-      >
-      at
-      Cafe Vogel, Vienna, AT
-    </div>
-
-    <div class="single-event">
-      SAT, 29/03/2025
-      <a
-              class="event-links"
-              href="https://intouchsound.com/"
-              target="_blank"
-      >Ibiza Night</a
-      >
-      at
-      CiCi Club, Vienna, AT
-    </div>
-
-
   </section>
 
   <!-- SOCIAL LINKS -->
   <section id="links">
-    <h2 class="section-title">FOLLOW ME</h2>
-
-    <a
-            class="link"
-            href="https://soundcloud.com/marko-kontakt"
-            target="_blank"
-    >
-      <i class="fab fa-soundcloud"></i>&nbsp;Soundcloud
+    <h2 class="section-title">our links</h2>
+    <a class="link" href="https://www.youtube.com/@intouch.sessions" target="_blank">
+      <i class="fab fa-youtube"></i>&nbsp;youtube
     </a>
-    <a
-            class="link"
-            href="https://www.instagram.com/marko.kontakt/"
-            target="_blank"
-    >
-      <i class="fab fa-instagram"></i>&nbsp;Instagram
+    <a class="link" href="https://soundcloud.com/intouch-sessions" target="_blank">
+      <i class="fab fa-soundcloud"></i>&nbsp;soundcloud
     </a>
-    <a
-            class="link"
-            href="https://www.tiktok.com/@marko.kontakt"
-            target="_blank"
-    >
-      <i class="fab fa-tiktok"></i>&nbsp;TikTok
+    <a class="link" href="https://www.instagram.com/intouch.sessions/" target="_blank">
+      <i class="fab fa-instagram"></i>&nbsp;instagram
     </a>
-    <a
-            class="link"
-            href="https://www.youtube.com/@marko.kontakt"
-            target="_blank"
-    >
-      <i class="fab fa-youtube"></i>&nbsp;Youtube
+    <a class="link" href="https://www.tiktok.com/@intouch.sessions" target="_blank">
+      <i class="fab fa-tiktok"></i>&nbsp;tiktok
+    </a>
+    <a class="link" href="https://ikono.global/de/vienna" target="_blank">
+      <i class="fa-light fa-globe"></i>&nbsp;ikono
+    </a>
+    <a class="link" href="https://intouchsound.com" target="_blank">
+      <i class="fa-light fa-globe"></i>&nbsp;intouch sound
     </a>
   </section>
 
   <!-- TRACKS (YOUTUBE) -->
   <section id="tracks">
-    <h2 class="section-title">LATEST VIDEOS</h2>
-
-
+    <h2 class="section-title">latest sessions</h2>
     <div class="youtube-container">
       <iframe
-              src="https://www.youtube.com/embed/kf6VNZTwOlc?si=uBsHfeMEVKErs_Nr"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
+        src="https://www.youtube.com/embed/kf6VNZTwOlc?si=uBsHfeMEVKErs_Nr"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen
       ></iframe>
       <div class="youtube-description-container">
         <a
-                href="https://www.youtube.com/@marko.kontakt"
-                class="youtube-link"
-                target="_blank"
-        >MARKO KONTAKT</a
-        >
+          href="https://www.youtube.com/@marko.kontakt"
+          class="youtube-link"
+          target="_blank"
+        >MARKO KONTAKT</a>
         <a
-                href="https://youtu.be/kf6VNZTwOlc?si=dpTLHT5yhGuBr01r"
-                class="youtube-video-title"
-                target="_blank"
-        >303 + 303 + 303</a
-        >
-        <span class="youtube-video-description"
-        >Happy 303 day!</span
-        >
-      </div>
-    </div>
-
-
-    <div class="youtube-container">
-      <iframe
-              src="https://www.youtube.com/embed/QuKeMtLyaLk?si=KBi31HLLLoL_IL6K"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
-      ></iframe>
-      <div class="youtube-description-container">
-        <a
-                href="https://www.youtube.com/@marko.kontakt"
-                class="youtube-link"
-                target="_blank"
-        >MARKO KONTAKT</a
-        >
-        <a
-                href="https://www.youtube.com/watch?v=QuKeMtLyaLk"
-                class="youtube-video-title"
-                target="_blank"
-        >SYSTEM OF A BOUNCE</a
-        >
-        <span class="youtube-video-description"
-        >nostaligic hardgrooce and techno mix</span
-        >
-      </div>
-    </div>
-
-    <div class="youtube-container">
-      <iframe
-              src="https://www.youtube.com/embed/TWCAUStaV10?si=q0RuxhbxVUdazkEp"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
-      ></iframe>
-      <div class="youtube-description-container">
-        <a
-                href="https://www.youtube.com/@marko.kontakt"
-                class="youtube-link"
-                target="_blank"
-        >MARKO KONTAKT</a
-        >
-        <a
-                href="https://youtu.be/TWCAUStaV10?si=ryWvfnBuOaCnA2Wo"
-                class="youtube-video-title"
-                target="_blank"
-        >VIENNA 9PM - Christmas Funky House Mix</a
-        >
-        <span class="youtube-video-description"
-        >Disco and Funky House mixed at Vienna Christmas Market</span
-        >
-      </div>
-    </div>
-
-    <!-- 1 -->
-    <div class="youtube-container">
-      <iframe
-              src="https://www.youtube.com/embed/5psvaktIP3Q?si=qfz_S4nJIhZww2gU"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
-      ></iframe>
-      <div class="youtube-description-container">
-        <a
-                href="https://www.youtube.com/@marko.kontakt"
-                class="youtube-link"
-                target="_blank"
-        >MARKO KONTAKT</a
-        >
-        <a
-                href="https://www.youtube.com/watch?v=5psvaktIP3Q"
-                class="youtube-video-title"
-                target="_blank"
-        >TECHEYES VOL 2</a
-        >
-        <span class="youtube-video-description"
-        >hardgroove only mix</span
-        >
-      </div>
-    </div>
-
-    <!-- 2 -->
-    <div class="youtube-container">
-      <iframe
-              src="https://www.youtube.com/embed/Yh-cQfNPAIw?si=zebVjxeKXBQEMjtK"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
-      ></iframe>
-      <div class="youtube-description-container">
-        <a
-                href="https://www.youtube.com/@marko.kontakt"
-                class="youtube-link"
-                target="_blank"
-        >MARKO KONTAKT</a
-        >
-        <a
-                href="https://www.youtube.com/watch?v=Yh-cQfNPAIw"
-                class="youtube-video-title"
-                target="_blank"
-        >Deep House near Alpine Lake</a
-        >
-        <span class="youtube-video-description"
-        >the groove of alpine summer</span
-        >
-      </div>
-    </div>
-
-    <!-- 3 -->
-    <div class="youtube-container">
-      <iframe
-              src="https://www.youtube.com/embed/yc00QGyOlj8"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
-      ></iframe>
-      <div class="youtube-description-container">
-        <a
-                href="https://www.youtube.com/@marko.kontakt"
-                class="youtube-link"
-                target="_blank"
-        >MARKO KONTAKT</a
-        >
-        <a
-                href="https://youtu.be/yc00QGyOlj8"
-                class="youtube-video-title"
-                target="_blank"
-        >TECH HOES VOL. 2 - Tech House Mix</a
-        >
-        <span class="youtube-video-description"
-        >Feel the bass and sing them lyrics!</span
-        >
-      </div>
-    </div>
-
-    <!-- 4 -->
-    <div class="youtube-container">
-      <iframe
-              src="https://www.youtube.com/embed/2s29QgyMwpM"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
-      ></iframe>
-      <div class="youtube-description-container">
-        <a
-                href="https://www.youtube.com/@marko.kontakt"
-                class="youtube-link"
-                target="_blank"
-        >MARKO KONTAKT</a
-        >
-        <a
-                href="https://www.youtube.com/watch?v=2s29QgyMwpM"
-                class="youtube-video-title"
-                target="_blank"
-        >Wachau 4PM - Lofi and Stoner House Mix</a
-        >
-        <span class="youtube-video-description"
-        >Take a laid-back ride through the scenic beauty of Wachau..</span
-        >
-      </div>
-    </div>
-
-    <!-- 5 -->
-    <div class="youtube-container">
-      <iframe
-              src="https://www.youtube.com/embed/qNS4-XiroeE?si=lcbpE22MkEvlOjfW"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
-      ></iframe>
-      <div class="youtube-description-container">
-        <a
-                href="https://www.youtube.com/@marko.kontakt"
-                class="youtube-link"
-                target="_blank"
-        >MARKO KONTAKT</a
-        >
-        <a
-                href="https://www.youtube.com/watch?v=qNS4-XiroeE"
-                class="youtube-video-title"
-                target="_blank"
-        >Valencia 7AM - Techno Morning Quicky</a
-        >
-        <span class="youtube-video-description"
-        >Hardgroove and trance bathing in spanish sun rays. Wake up!</span
-        >
-      </div>
-    </div>
-
-    <!-- 6 -->
-    <div class="youtube-container">
-      <iframe
-              src="https://www.youtube.com/embed/5JaA-4xxTKE?si=KTYrrFPchZQjU-IP"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
-      ></iframe>
-      <div class="youtube-description-container">
-        <a
-                href="https://www.youtube.com/@marko.kontakt"
-                class="youtube-link"
-                target="_blank"
-        >MARKO KONTAKT</a
-        >
-        <a
-                href="https://www.youtube.com/watch?v=5JaA-4xxTKE"
-                class="youtube-video-title"
-                target="_blank"
-        >Shanghai 3AM - Techno Live Mix</a
-        >
-        <span class="youtube-video-description"
-        >Big room, future rave and acid techno live mix.</span
-        >
-      </div>
-    </div>
-
-    <!-- 7 -->
-    <div class="youtube-container">
-      <iframe
-              src="https://www.youtube.com/embed/3X_YM_S3WR8?si=FDpubm0lcR1Q3CdX"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
-      ></iframe>
-      <div class="youtube-description-container">
-        <a
-                href="https://www.youtube.com/@marko.kontakt"
-                class="youtube-link"
-                target="_blank"
-        >MARKO KONTAKT</a
-        >
-        <a
-                href="https://www.youtube.com/watch?v=3X_YM_S3WR8"
-                class="youtube-video-title"
-                target="_blank"
-        >TECHYES VOL 1 - Hardgroove, Trance and Breaks Mix</a
-        >
-        <span class="youtube-video-description"
-        >Explore the world of TECHYES, because why the tech no?</span
-        >
-      </div>
-    </div>
-
-    <!-- 8 -->
-    <div class="youtube-container">
-      <iframe
-              src="https://www.youtube.com/embed/Yh-cQfNPAIw"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
-      ></iframe>
-      <div class="youtube-description-container">
-        <a
-                href="https://www.youtube.com/@marko.kontakt"
-                class="youtube-link"
-                target="_blank"
-        >MARKO KONTAKT</a
-        >
-        <a
-                href="https://www.youtube.com/watch?v=Yh-cQfNPAIw"
-                class="youtube-video-title"
-                target="_blank"
-        >Deep and Ibiza House near Alpine Lake</a
-        >
-        <span class="youtube-video-description"
-        >Nature meets the groove. 🌊🌲🎶</span
-        >
-      </div>
-    </div>
-
-    <!-- 9 -->
-    <div class="youtube-container">
-      <iframe
-              src="https://www.youtube.com/embed/IgcijMYp28c?si=dp_SoKc-2-PqW89E"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
-      ></iframe>
-      <div class="youtube-description-container">
-        <a
-                href="https://www.youtube.com/@marko.kontakt"
-                class="youtube-link"
-                target="_blank"
-        >MARKO KONTAKT</a
-        >
-        <a
-                href="https://www.youtube.com/watch?v=IgcijMYp28c"
-                class="youtube-video-title"
-                target="_blank"
-        >DEEPER - Sunset old school deep house mix</a
-        >
-        <span class="youtube-video-description"
-        >Deep house sunset from the rooftops of Vienna!</span
-        >
-      </div>
-    </div>
-
-    <!-- 10 -->
-    <div class="youtube-container">
-      <iframe
-              src="https://www.youtube.com/embed/PmkxkGDsyeY?si=7Ahpxt_iiY0T_f_r"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
-      ></iframe>
-      <div class="youtube-description-container">
-        <a
-                href="https://www.youtube.com/@marko.kontakt"
-                class="youtube-link"
-                target="_blank"
-        >MARKO KONTAKT</a
-        >
-        <a
-                href="https://www.youtube.com/watch?v=PmkxkGDsyeY"
-                class="youtube-video-title"
-                target="_blank"
-        >TECH HOES I - Tech House Live Mix</a
-        >
-        <span class="youtube-video-description"
-        >Originals, Remixes, and Trippy Visuals</span
-        >
-      </div>
-    </div>
-
-    <!-- 11 -->
-    <div class="youtube-container">
-      <iframe
-              src="https://www.youtube.com/embed/CGQhJ0lpVDU?si=xGoYBeGIUnmxjekY"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
-      ></iframe>
-      <div class="youtube-description-container">
-        <a
-                href="https://www.youtube.com/@radiorudina"
-                class="youtube-link"
-                target="_blank"
-        >Radio Rudina</a
-        >
-        <a
-                href="https://www.youtube.com/watch?v=CGQhJ0lpVDU"
-                class="youtube-video-title"
-                target="_blank"
-        >Radio Rudina | Classic House Mix</a
-        >
-        <span class="youtube-video-description"
-        >Live sesh at Radio Rudina's Mahlerstrasse Studio</span
-        >
+          href="https://youtu.be/kf6VNZTwOlc?si=dpTLHT5yhGuBr01r"
+          class="youtube-video-title"
+          target="_blank"
+        >303 + 303 + 303</a>
+        <span class="youtube-video-description">Happy 303 day!</span>
       </div>
     </div>
   </section>
 </main>
+
+<footer>
+  <div class="footer-links-container">
+    <span>INTOUCH SESSIONS 2025</span>
+    <a class="footer-link" href="">Privacy Policy</a>
+    <a class="footer-link" href="">Terms and Conditions</a>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="contactModal">
+  <div class="modal-content">
+    <ul class="modal-tabs">
+      <li class="modal-tab active" data-tab="session">Session</li>
+      <li class="modal-tab" data-tab="press">Press</li>
+      <li class="modal-tab" data-tab="cooperation">Cooperation</li>
+    </ul>
+    <div class="tab-contents">
+      <div class="tab-content active" id="session">
+        <div class="iframe-container">
+          <iframe
+            class="notion-form"
+            src="https://ikonoofficial.notion.site/ebd/22ad877e2c28800fb20dc3f9085e0619"
+            height="600px"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="tab-content" id="press">
+        <div class="iframe-container">
+          <iframe
+            class="notion-form"
+            src="https://ikonoofficial.notion.site/ebd/22ad877e2c28800fb20dc3f9085e0619"
+            height="600px"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="tab-content" id="cooperation">
+        <div class="iframe-container">
+          <iframe
+            class="notion-form"
+            src="https://ikonoofficial.notion.site/ebd/22ad877e2c28800fb20dc3f9085e0619"
+            height="600px"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
