@@ -1,10 +1,7 @@
-/* 
-  Use your custom font: Wiener Melange.
-  Make sure to place the OTF file in /fonts/Wiener_Melange_Regular.otf 
-*/
+
 @font-face {
-    font-family: "WienerMelange";
-    src: url("fonts/Wiener_Melange_Regular.otf") format("opentype");
+    font-family: "GeneralSans";
+    src: url("fonts/GeneralSans-Regular.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -12,7 +9,7 @@
 
 /* Root variables */
 :root {
-    --font: "WienerMelange", sans-serif;
+    --font: "GeneralSans", sans-serif;
     /*--bgColor: #0a0a0a; !* "sex matte" black fallback *!*/
     --bgColor: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 0, 0, 0));
     --bgColorSolid: #0a0a0a;
